@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Tickets</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('ppp.jpeg'); /* Specify the URL of your background photo */
+            background-size: cover;
+            background-position: center;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 30px;
+            color: #fff; /* Set text color to white */
+        }
+
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input[type="text"],
+        input[type="date"],
+        select,
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #availability {
+            max-width: 700px;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Room reservation</h1>
+    <form id="bookingForm">
+        <label for="agency">Агенттік таңдау:</label>
+        <select id="agency" name="agency" required>
+            <option value="">Таңда</option>
+            <option value="FlightHub">FlightHub</option>
+            <option value="Expedia">Expedia</option>
+            <option value="Kayak">Kayak</option>
+            <!-- Add more options as needed -->
+        </select>
+        <label for="departure">Адам саны</label>
+        <input type="text" id="departure" name="departure" required>
+        <label for="destination">Уақыт</label>
+        <input type="text" id="destination" name="destination" required>
+        <label for="date">Келу:</label>
+        <input type="date" id="date" name="date" required>
+        <label for="time">Щығу:</label>
+        <input type="date" id="date" name="date" required>
+        <select id="time" name="time" required>
+            <option value="">Бөлме таңдау</option>
+            <option value="Morning">Стандарт</option>
+            <option value="Afternoon">Afternoon</option>
+            <option value="Night">Night</option>
+        </select>
+        <button type="submit">Check Options</button>
+    </form>
+
+    <div id="availability"></div>
+
+    <script>
+        // JavaScript code remains the same
+    </script>
+</body>
+</html>

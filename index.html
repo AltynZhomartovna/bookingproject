@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>Hotel Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <header class="header" id="navigation-menu">
+    <div class="container">
+      <nav>
+        <a href="#" class="logo"> <img src="logo.png" alt=""> </a>
+
+        <ul class="nav-menu">
+          <li> <a href="#home" class="nav-link">Home</a> </li>
+          <li> <a href="#book" class="nav-link">Book</a> </li>
+          <li> <a href="#about" class="nav-link">About</a> </li>
+          <li> <a href="#rooms" class="nav-link">Rooms</a> </li>
+          <li> <a href="#restaurant" class="nav-link">Restaurant</a> </li>
+          <li> <a href="#gallery" class="nav-link">Gallery</a> </li>
+          <li> <a href="contact.html" class="nav-link">Contact</a> </li>
+          <li> <a href="#agencies" class="nav-link">Agencies</a></li>
+        </ul>
+
+        <div class="hambuger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <script>
+    const hambuger = document.querySelector('.hambuger');
+    const navMenu = document.querySelector('.nav-menu');
+
+    hambuger.addEventListener("click", mobileMenu);
+
+    function mobileMenu() {
+      hambuger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    }
+
+    const navLink = document.querySelectorAll('.nav-link');
+    navLink.forEach((n) => n.addEventListener("click", closeMenu));
+
+    function closeMenu() {
+      hambuger.classList.remove("active");
+      navMenu.classList.remove("active");
+    }
+  </script>
+
+  <section class="home" id="home">
+    <div class="head_container">
+      <div class="box">
+        <div class="text">
+          <h1>Hello from Golden Hotel</h1> Қонақ үй әр қадам сайын ұмытылмас оқиғаларды уәде етеді.</p>
+          <button id="moreInfoButton">Log in</button>
+          <button id="moreInfoB">Get Started</button>
+    <script>
+      // Get the button element
+      var button = document.getElementById("moreInfoB");
+    
+      // Add a click event listener to the button
+      button.addEventListener("click", function() {
+        // Redirect to the desired page
+        window.location.href = "opportunities.html";
+      });
+    </script>
+  
+
+<script>
+  // Get the button element
+  var button = document.getElementById("moreInfoButton");
+
+  // Add a click event listener to the button
+  button.addEventListener("click", function() {
+    // Redirect to the desired page
+    window.location.href = "altyn1.html";
+  });
+</script>
+
+        </div>
+      </div>
+      <div class="image">
+        <img src="home1.jpg" class="slide">
+      </div>
+      <div class="image_item">
+        <img src="home1.jpg" alt="" class="slide active" onclick="img('home1.jpg')">
+        <img src="home2.jpg" alt="" class="slide" onclick="img('home2.jpg')">
+        <img src="home3.jpg" alt="" class="slide" onclick="img('home3.jpg')">
+        <img src="home4.jpg" alt="" class="slide" onclick="img('home4.jpg')">
+      </div>
+    </div>
+  </section>
+  <script>
+    function img(anything) {
+      document.querySelector('.slide').src = anything;
+    }
+
+    function change(change) {
+      const line = document.querySelector('.image');
+      line.style.background = change;
+    }
+  </script>
+  <section class="book" id="book">
+    <div class="container flex">
+      <div class="input grid">
+        <div class="box">
+          <label>Check-in:</label>
+          <input type="date" placeholder="Check-in-Date">
+        </div>
+        <div class="box">
+          <label>Check-out:</label>
+          <input type="date" placeholder="Check-out-Date">
+        </div>
+        <div class="box">
+          <label>Adults:</label> <br>
+          <input type="number" placeholder="0">
+        </div>
+        <div class="box">
+          <label>Children:</label> <br>
+          <input type="number" placeholder="0">
+        </div>
+      </div>
+      <div class="search">
+        <input type="submit" value="SEARCH">
+      </div>
+    </div>
+    
+    </div>
+  </section>
+  <button id="moreInfo">More Specific booking</button>
+    <script>
+      // Get the button element
+      var button = document.getElementById("moreInfog");
+    
+      // Add a click event listener to the button
+      button.addEventListener("click", function() {
+        // Redirect to the desired page
+        window.location.href = "opportunities.html";
+      });
+    </script>
+  
+
+  
+  <section class="about" id="about">
+    <div class="container flex">
+      <div class="left">
+        <div class="img">
+          <img src="a1.jpg" alt="" class="image1">
+          <img src="a2.jpg" alt="" class="image2">
+        </div>
+      </div>
+      <div class="right">
+        <div class="heading">
+          <h5>ЖАЙЛЫЛЫҚТЫ ЖОҒАРЫ ДЕҢГЕЙГЕ КӨТЕРУ</h5>
+          <h2>Welcome to Golden Hotel</h2>
+          <p>Қаладағы жаңа қонақ үй заманауи дизайн элементтері мен ескірмейтін талғампаздығы бар талғампаз атмосфераны ұсына отырып, сән-салтанат пен ыңғайлылықтың үйлесімін ұсынады. Вестибюльде еденнен төбеге дейінгі терезелер бар, олар қаланың панорамалық көрінісін ұсынады. </p>
+          <p>Қонақ бөлмелері мен люкс бөлмелері заманауи талғампаздықпен және сәнді ыңғайлылықпен жасалған, жұмсақ төсек-орындарды, мәрмәр ванна бөлмелерін және жеке балкондарды ұсынады. </p>
+          <button id="moreInfo">Read more</button>
+    <script>
+      // Get the button element
+      var button = document.getElementById("moreInfo");
+    
+      // Add a click event listener to the button
+      button.addEventListener("click", function() {
+        // Redirect to the desired page
+        window.location.href = "aboutus.html";
+      });
+    </script>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="wrapper">
+    <div class="container">
+      <div class="text">
+        <div class="img">
+          <img src="01.jpg" alt="">
+        </div>
+        <h2>Біздегі мүмкіндіктер</h2>
+        <p>Біздің Golden қонақүйімізде көптеген мүмкіндіктер қарастырылған</p>
+
+        <div class="content">
+          <div class="box flex">
+            <i class="fas fa-swimming-pool"></i>
+            <span>Бассейн</span>
+          </div>
+          <div class="box flex">
+            <i class="fas fa-dumbbell"></i>
+            <span>Спорт зал және йога</span>
+          </div>
+          <div class="box flex">
+            <i class="fas fa-spa"></i>
+            <span>Спа және массаж</span>
+          </div>
+          <div class="box flex">
+            <i class="fas fa-ship"></i>
+            <span>Қайық турлары</span>
+          </div>
+          <div class="box flex">
+            <i class="fas fa-swimmer"></i>
+            <span>Сюрфинг</span>
+          </div>
+          <div class="box flex">
+            <i class="fas fa-microphone"></i>
+            <span>Конференц-зал</span>
+          </div>
+          <div class="box flex">
+            <i class="fas fa-water"></i>
+            <span>Кино және театр</span>
+          </div>
+          <div class="box flex">
+            <i class="fas fa-umbrella-beach"></i>
+            <span>Приватты жағажай</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="room top" id="rooms">
+    <div class="container">
+      <div class="heading_top flex1">
+        <div class="heading">
+          <h5>ЖАЙЛЫЛЫҚТЫҢ ЕҢ ЖОҒАРЫ ДЕҢГЕЙГЕ КӨТЕРІЛУІ</h5>
+          <h2>Бөлмелер және люкс бөлмелері</h2>
+        </div>
+      </div>
+
+      <div class="content grid">
+        <div class="box">
+          <div class="img">
+            <img src="r1.jpg" alt="">
+          </div>
+          <div class="text">
+            <h3>Standard Room</h3>
+            <p> <span>$</span>59 <span>/per night</span> </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="r2.jpg" alt="">
+          </div>
+          <div class="text">
+            <h3>Deluxe Room</h3>
+            <p> <span>$</span>89 <span>/per night</span> </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="r3.jpg" alt="">
+          </div>
+          <div class="text">
+            <h3>Suite</h3>
+            <p> <span>$</span>129 <span>/per night</span> </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="restaurant top" id="restaurant">
+    <div class="container flex">
+      <div class="left">
+        <img src="re.jpg" alt="">
+      </div>
+      <div class="right">
+        <div class="text">
+          <h2>Біздің ресторан</h2>
+          <p>Мейрамхана жергілікті базарлардағы жаңа ингредиенттерді пайдалана отырып, аспаздық шеберлікті ұсынады, ал жергілікті агенттіктер көптеген қызықты экскурсиялар мен іс-шараларды ұсынады. </p>
+        </div>
+        <div class="accordionWrapper">
+          <div class="accordionItem open">
+            <h2 class="accordionIHeading">Italian Kitchen</h2>
+            <div class="accordionItemContent">
+              <p>Бай және хош иіске толы итальяндық тағам-бұл барлық адамдар үшін аспаздық приключение. Cucina povera (кедейлердің асханасы) рустикалық тағамдарынан бастап, cucina principesca (ханзада асханасы) декадентті ләззаттарына дейін, әртүрлі уақытта танымал альта кучинаға (жоғары асүй) дейін. Cucina Italiana-дан әрқашан сізге ұнайтын нәрсе шығады. Итальяндық тағамдар өте тартымды болуы мүмкін, өйткені олар әрқашан дерлік жаңа ингредиенттерді пайдаланып нөлден дайындалады</p>
+            </div>
+          </div>
+          <div class="accordionItem close">
+            <h2 class="accordionIHeading">Kazakh Kitchen</h2>
+            <div class="accordionItemContent">
+              <p>Егер сіз қазақ тағамдарынан дәм татқыңыз келсе, Қазақстанда көруге болатын ең жақсы тағамдардың тізімін қарап шығуға болады. Біз әрбір турист дәмін татуы керек осы 10 тағамды жинадық.</p>
+            </div>
+          </div>
+          <div class="accordionItem close">
+            <h2 class="accordionIHeading">Korean Kitchen</h2>
+            <div class="accordionItemContent">
+              <p>Корейлер тағамды жартылай дайын болғанша жоғары отта пісіреді; олар шамадан тыс пісірілген немесе шамадан тыс пісірілген тағамдарға шыдамайды. Негізгі тағам-күріш пен кеспе, олар көкөністермен, етпен, балықпен біріктіріледі. Жергілікті тұрғындар ыстық тамақ ішуге дағдыланбаған. Егер олар термиялық өңдеуден өткен болса, оларды салқындату керек. Корей тағамдарының өзегі. Негізгі тағамдарға күріш, көкөністер, балық, теңіз өнімдері жатады. Әр тағамға көп мөлшерде дәмдеуіштер, соя пастасы және тұздық қосылады.</p>
+            </div>
+          </div>
+          <div class="accordionItem close">
+            <h2 class="accordionIHeading">Mexican Kitchen</h2>
+            <div class="accordionItemContent">
+              <p>Мексикада әлемдегі ең бай гастрономиялардың бірі бар, Ал Мексикалық тағамдар әлемдегі ең сүйікті тағамдардың бірі болып табылады! Бұл қазіргі кезде де қолданылып келе жатқан ежелгі техникалар жиынтығының өнімі Және испанға дейінгі жергілікті өнімдер мен даршын, бидай, сиыр еті, сүт немесе ірімшік сияқты Еуропалық ингредиенттер арасындағы қоспаның бір түрі, ал испанға дейінгі Төрт Негізгі Мексикалық ингредиенттер шоколад (иә, шоколад), чили (чили), гуажолот (жабайы күркетауық) және майз (жүгері).</p>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="agencies" id="agencies">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agencies - Flight Services</title>
+    <style>
+        .container1 {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .agency {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        .agency h2 {
+            margin-top: 0;
+        }
+
+        .agency p {
+            margin-bottom: 0;
+        }
+    </style>
+    <div class="container1">
+        <h1>Travel Agencies - Flight Services</h1>
+        
+        <div class="agency">
+            <h2>FlightHub</h2>
+            <p>FlightHub-жеңілдетілген рейстер мен демалыс пакеттерін ұсынуға маманданған жетекші онлайн туристік агенттік.</p>
+            <p>Contact: 1-800-123-4567</p>
+            <p>Website: <a href="https://www.flighthub.com">www.flighthub.com</a></p>
+        </div>
+
+        <div class="agency">
+            <h2>Expedia</h2>
+            <p>Expedia-рейстерді, қонақүйлерді және автокөлік жалдауды қоса алғанда, туристік қызметтердің кең ауқымын ұсынатын жаһандық туристік технологиялар компаниясы.</p>
+            <p>Contact: 1-800-987-6543</p>
+            <p>Website: <a href="https://www.expedia.com">www.expedia.com</a></p>
+        </div>
+
+        <div class="agency">
+            <h2>Kayak</h2>
+            <p>Kayak-пайдаланушыларға әртүрлі провайдерлердің рейстеріндегі, қонақүйлеріндегі және жалға берілетін көліктеріндегі бағаларды салыстыруға мүмкіндік беретін танымал саяхат іздеу жүйесі.</p>
+            <p>Contact: 1-800-567-8901</p>
+            <p>Website: <a href="https://www.kayak.com">www.kayak.com</a></p>
+        </div>
+    </div>
+</section>
+  <script>
+    var accItem = document.getElementsByClassName('accordionItem');
+    var accHD = document.getElementsByClassName('accordionIHeading');
+
+    for (i = 0; i < accHD.length; i++) {
+      accHD[i].addEventListener('click', toggleItem, false);
+    }
+
+    function toggleItem() {
+      var itemClass = this.parentNode.className;
+      for (var i = 0; i < accItem.length; i++) {
+        accItem[i].className = 'accordionItem close';
+      }
+      if (itemClass == 'accordionItem close') {
+        this.parentNode.className = 'accordionItem open';
+      }
+    }
+  </script>
+
+
+
+  <section class="gallary mtop " id="gallery">
+    <div class="container">
+      <div class="heading_top flex1">
+        <div class="heading">
+          <h5>WELCOME TO OUR PHOTO GALLERY</h5>
+          <h2>Біздің қонақүйдің фото галлереясы</h2>
+        </div>
+        
+      </div>
+
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <img src="g1.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="g2.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="g3.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="g4.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="g5.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="g6.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="g7.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="g8.jpg" alt="">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      dots: false,
+      navText: ["<i class='fas fa-chevron-left'></i>", "<i class='fas fa-chevron-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 2
+        },
+        1000: {
+          items: 4
+        }
+      }
+    })
+  </script>
+
+
+
+  <section class="map top">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14131.036667732067!2d85.32395955!3d27.69383745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snp!4v1637755481449!5m2!1sen!2snp" width="600" height="450" style="border:0;"
+      allowfullscreen="" loading="lazy"></iframe>
+  </section>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book your tickets easier with us</title>
+    <link rel="icon" type="image/x-icon" href="cc.ico"/>
+    <link rel="stylesheet" href="altush.css">
+    <style>
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #loginButton {
+            background-color: #009688;
+            color: white;
+        }
+
+        #SigninButton {
+            background-color: transparent;
+            color: white;
+            border: 1px solid white; /* Add a border for visibility */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#agencies">Agencies</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About Us</a>
+            <a href="#opportunities">Opportunities</a>
+            <div>
+                <button id="loginButton" type="button"><span> </span>  Log in</button>
+                <button id="SigninButton" type="button"><span> </span>  Sign up</button>
+            </div>
+        </nav>
+    </header>
+    <section id="home" ></section>
+    <section id="agencies"></section>
+    <section id="contact"></section>
+    <section id="about"></section>
+    <section id="opportunities"></section>
+
+    <div class="content">
+        <h1>Book your tickets</h1>
+        <p>Learn how to book your everything using this system</p>
+        <div>
+            <button id="getStartedButton" type="button"><span> </span> Get started</button>
+        </div>
+    </div> 
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Get references to the buttons
+            var getStartedButton = document.getElementById("getStartedButton");
+            
+            // Add click event listeners to the buttons
+            getStartedButton.addEventListener("click", function() {
+                // Redirect to altyn1.html when "Get started" button is clicked
+                window.location.href = "opportunities.html";
+            });
+        });
+    </script>
+</body>
+</html>
